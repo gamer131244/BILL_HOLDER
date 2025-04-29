@@ -1,0 +1,497 @@
+
+  @font-face {
+    font-family: 'Noto Nastaliq Urdu';
+    src: url('/NotoNastaliqUrdu-VariableFont_wght.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/Poppins-Regular.ttf') format('truetype');
+  }
+    
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    src: url('/NotoKufiArabic-VariableFont_wght.ttf') format('truetype');
+  }
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins" !important;
+  user-select: none !important;
+}
+
+input {
+  font-family: "Poppins" !important;
+}
+
+:lang(ur) {
+  font-family: "Noto Nastaliq Urdu" !important;
+}
+
+:lang(en) {
+  font-family: "Poppins" !important;
+}
+
+
+:lang(logo) {
+  font-family: "Noto Kufi Arabic";
+}
+
+
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vw;
+}
+
+.nav-top-class {
+  background: royalblue;
+  color: white;
+  min-height: 10vw;
+  width: 100vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.nav-top-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+}
+
+
+.nav-top-main .nav-top-title-class {
+  padding: 1vw;
+  padding-left: 1.5vw;
+  font-size: 4.4vw;
+  font-weight: 500;
+}
+
+.nav-top-back-btn {
+  padding: 0.5vw;
+}
+
+.nav-top-main .nav-top-back-btn button {
+  background: transparent;
+  border: none;
+  height: 8vw;
+  width: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  padding: 1vw;
+}
+
+.nav-top-back-btn button:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #42445A1C;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+}
+
+.nav-top-back-btn button:active:before {
+  transform: scale(1.1);
+  transition: all 0.1s;
+}
+
+.nav-top-back-btn button img {
+  height: 7vw;
+  width: 7vw;
+}
+
+
+img {
+  height: 4vw;
+  width: 4vw;
+}
+
+
+
+.bill-editor-screen-class {
+  background: whitesmoke;
+  width: 90vw;
+  height: 150vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5vw;
+}
+
+
+.screen-editor-content-class {
+  background: transparent;
+  width: 80vw;
+  height: 120vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: center;
+  margin-top: -25vw;
+}
+
+
+.logo-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+}
+
+.logo-main {
+  height: 5vw;
+  min-width: 20vw;
+  max-width: 40vw;
+  padding: 1vw;
+  border: 0.3vw solid royalblue;
+  box-shadow: -0.5vw 0.2vw royalblue;
+  border-radius: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  color: royalblue;
+  transform: skewX(-5deg);
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.date-class {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1.2vw;
+  padding: 1vw;
+  padding-top: 2.5vw;
+  padding-left: 5vw;
+}
+
+
+.date-class .date-main span {
+  text-decoration-line: underline;
+  font-size: 3vw;
+}
+
+.date-title {
+  font-size: 3vw;
+}
+
+
+.name-user-class {
+  display: flex;
+  justify-content: right;
+  padding: 1vw;
+  padding-top: 0vw;
+  padding-right: 2vw;
+  align-items: center;
+  gap: 1.2vw;
+}
+
+.name-user-main {
+  width: 61vw;
+  border-bottom: 0.4vw solid black;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.name-user-main span {
+  font-size: 3vw;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.name-user-class .name-title {
+  font-size: 3vw;
+}
+
+
+.main-bill-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1vw;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+
+.main-bill-class {
+  border: 0.5vw double royalblue;
+  height: 100%;
+  width: 80vw;
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  position: relative;
+}
+
+
+.amount-row-class {
+  height: 100%;
+  width: 15vw;
+  color: black;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-left: 0.5vw double royalblue;
+  font-size: 3.4vw;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.amount-row-class:active {
+  background: pink !important;
+}
+
+.amount-row-expand {
+  width: 30vw !important;
+}
+
+.mini-expand {
+  width: 19vw !important;
+  border-left: 0;
+}
+
+.amount-row-title-class {
+  padding: 0.2vw;
+}
+
+
+.amount-row-title-class {
+  border-bottom: 0.5vw double royalblue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.2vw;
+}
+
+
+.amount-row-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.items-amount {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 3vw;
+  width: 100%;
+}
+
+.items-amount span {
+  border-bottom: 0.4vw double royalblue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  animation: addBill 0.4s linear;
+}
+
+
+@keyframes addBill {
+  0% {
+    opacity: 0;
+    transform: translateY(5vw) scale(0);
+  }
+}
+
+
+
+.main-bill {
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  overflow: hidden;
+}
+
+
+.add-more-main {
+  background: royalblue;
+  height: 8vw;
+  width: 8vw;
+  padding: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.add-more-main span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-more-main img {
+  height: 8vw;
+  width: 8vw;
+}
+
+.add-more-main:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #42445A4D;
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.add-more-main:active:before {
+  transform: scale(1);
+  transition: all 0.2s;
+}
+
+
+.remove-more-main {
+  background: indianred;
+  height: 8vw;
+  width: 8vw;
+  padding: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.remove-more-main span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remove-more-main img {
+  height: 5vw;
+  width: 5vw;
+}
+
+.remove-more-main:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #42445A4D;
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.remove-more-main:active:before {
+  transform: scale(1);
+  transition: all 0.2s;
+}
+
+
+
+
+
+.ui-btn-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+
+.bill-opt {
+  outline: none;
+  font-family: "Noto Nastaliq Urdu" !important;
+}
+
+
+
+.nav-bottom-ui-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+
+.nav-bottom-ui-button button {
+  border: none;
+  height: 9vw;
+  width: 9vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vw;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.nav-bottom-ui-button button:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #42445A21;
+  position: absolute;
+  border-radius: 2vw;
+  transform: scale(0);
+}
+
+.nav-bottom-ui-button button:active:before {
+  transform: scale(1);
+  transition: all 0.1s;
+}
+
+
+.nav-bottom-class {
+  background: transparent;
+  min-height: 15vw;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vw;
+}
+
+
+.nav-top-wrapper {
+  transition: all 0.3s;
+}
+
+
+.ui-btn-class {
+  transition: all 0.3s;
+}
+
+
+
+.output {
+  height: 50vh;
+  width: 100vw;
+  background: red;
+}
+
+
+
